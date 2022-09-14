@@ -15,7 +15,7 @@ public class AStarPathFinding : MonoBehaviour
 	{
 		List<Node> openedSet = new	List<Node>();
 		HashSet<Node> closedSet = new	HashSet<Node>();
-		
+	
 		Node startNode = grid.NodeFromWorldPoint(startPos);
 		openedSet.Add(startNode);
 		Node endNode = grid.NodeFromWorldPoint(targetPos);
@@ -49,11 +49,7 @@ public class AStarPathFinding : MonoBehaviour
 						{
 							openedSet.Add(neighnour);
 						}							
-					}								
-				}
-			}
-		}	
-	}
+}}}}}
 	
 	int GetDistance(Node a, Node b) 
 	{
@@ -80,12 +76,6 @@ public class AStarPathFinding : MonoBehaviour
 		grid.path = path;
 	}
 	
-    // Start is called before the first frame update
-    void Start()
-    {
-	    
-    }
-
     // Update is called once per frame
     void Update()
     {
